@@ -136,7 +136,7 @@ The fine-tuned model is deployed on the **Mahder AI** web application for real-t
 
 For more details about the deployment, see my app repository:
 - **[Mahder AI Repo](https://github.com/mahdertesf/Mahder-AI)**
-- **[Deployment Code](https://github.com/mahdertesf/Mahder-AI/blob/main/backend/telegramhate/views.py)**
+- **[API view code](https://github.com/mahdertesf/Mahder-AI/blob/main/backend/telegramhate/views.py)**
 
 ## Conclusion
 
