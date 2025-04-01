@@ -56,7 +56,7 @@ This repository includes the following major steps:
 │   ├── amharic_sp_model.model           # SentencePiece model file
 │   ├── amharic_sp_model.vocab           # SentencePiece vocabulary file
 │
-└── [notebook_name].ipynb                # Jupyter notebook with code and documentation
+└── train.ipynb                # Jupyter notebook with code and documentation
 ```
 
 ## Dataset
