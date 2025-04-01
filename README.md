@@ -1,6 +1,6 @@
 # Amharic Transformer: Pre-training and Hate Speech Recognition
 
-This repository contains the code and resources for pre-training a Transformer model from scratch on an Amharic dataset and fine-tuning it for Amharic hate speech recognition. 
+This repository contains the code and resources for pre-training a Transformer model from scratch on an Amharic dataset and fine-tuning it for Amharic hate speech recognition.
 
 The goal is to build Transformer models from scratch, pre-train them using Masked Language Modeling (MLM), and fine-tune them on labeled data to develop a model capable of understanding the nuances of the Amharic language and accurately identifying hate speech content.
 
@@ -19,12 +19,11 @@ The goal is to build Transformer models from scratch, pre-train them using Maske
 
 ## Introduction
 
-This project explores the application of Transformer networks to the Amharic language, focusing on pre-training and hate speech recognition. Amharic, being a low-resource language, benefits significantly from pre-training techniques that allow models to learn contextualized word representations from large amounts of unlabeled data. 
+This project explores the application of Transformer networks to the Amharic language, focusing on pre-training and hate speech recognition. Amharic, being a low-resource language, benefits significantly from pre-training techniques that allow models to learn contextualized word representations from large amounts of unlabeled data.
 
-This project leverages a Masked Language Model (MLM) approach for pre-training, followed by fine-tuning on a labeled dataset for hate speech detection. The trained model is then deployed on the **Mahder AI** web app.
+This project leverages a Masked Language Model (MLM) approach for pre-training, followed by fine-tuning on a labeled dataset for hate speech detection. The trained model is then deployed on the **Mahder AI** web application.
 
-This repository includes the following major steps:
-
+### Key Steps:
 - Data collection and preprocessing
 - Transformer model implementation
 - Pre-training using MLM
@@ -49,8 +48,8 @@ This repository includes the following major steps:
 │   ├── pretrained_model_checkpoint/
 │   │   └── model_weights_v3.h5          # Checkpoint of the pre-trained Transformer
 │   ├── finetuned_model_weight/
-│   │   └── binary_classifier_weights_v21.h5  # Weights after Fine-tuning
-│   └── model_weights.h5                 # Saved Checkpoints
+│   │   └── binary_classifier_weights_v21.h5  # Weights after fine-tuning
+│   └── model_weights.h5                 # Saved checkpoints
 │
 ├── sentencepiece_model/
 │   ├── amharic_sp_model.model           # SentencePiece model file
@@ -62,13 +61,13 @@ This repository includes the following major steps:
 ## Dataset
 
 ### Pre-training Data
-A large corpus of unlabeled Amharic text collected from various Telegram channels (e.g., **Tikvah Ethiopia, Addis Standard Amharic**). The dataset consists of news articles, discussions, and other textual content.
-- Location: `/data/totaldata.json`
+A large corpus of unlabeled Amharic text was collected from various Telegram channels (e.g., **Tikvah Ethiopia, Addis Standard Amharic**). The dataset consists of news articles, discussions, and other textual content.
+- **Location:** `/data/totaldata.json`
 
 ### Fine-tuning Data
-A labeled dataset for Amharic hate speech recognition obtained from Mendeley Data:
-- [Download Dataset](https://data.mendeley.com/datasets/ymtmxx385m/1)
-- Location: `/data/original_hate_speech_data/`
+A labeled dataset for Amharic hate speech recognition was obtained from Mendeley Data:
+- **[Download Dataset](https://data.mendeley.com/datasets/ymtmxx385m/1)**
+- **Location:** `/data/original_hate_speech_data/`
 
 #### Data Preprocessing Steps
 - Removing URLs, hashtags, mentions, emojis, and English words
@@ -131,10 +130,13 @@ The model is evaluated using a held-out validation set with key metrics:
 
 The fine-tuned model is deployed on the **Mahder AI** web application for real-time Amharic hate speech detection.
 
-- Users can submit Amharic text.
-- The model returns a classification indicating if the text contains hate speech.
+- Users input a Telegram channel username.
+- The backend collects all the data from that channel, groups the texts into chunks, and feeds them into the model.
+- The model returns a classification indicating whether the text contains hate speech and the level of hate or non-hate speech.
 
-*(Replace this with the correct website link once available.)*
+For more details about the deployment, see my app repository:
+- **[Mahder AI Repo](https://github.com/mahdertesf/Mahder-AI)**
+- **[Deployment Code](https://github.com/mahdertesf/Mahder-AI/blob/main/backend/telegramhate/views.py)**
 
 ## Conclusion
 
