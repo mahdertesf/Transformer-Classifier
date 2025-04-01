@@ -151,4 +151,4 @@ This project presents a comprehensive approach to building an **Amharic hate spe
 - **Explainability**: Develop explainable AI techniques to highlight words influencing hate speech classification.
 
 ---
-🚀 **Contributions are welcome!** If you'd like to contribute, feel free to submit a pull request or open an issue.
+**Contributions are welcome!** If you'd like to contribute, feel free to submit a pull request or open an issue.
