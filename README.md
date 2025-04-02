@@ -61,7 +61,7 @@ This project leverages a Masked Language Model (MLM) approach for pre-training, 
 ```
 Note: The two directories `model_weights/` and `data/` are not available here due to their size and GitHub's push restrictions. Instead, they have been uploaded to Kaggle at the following locations:
 
-- **Model Weights:** [Transformer Classifier (Pre-trained and Fine-tuned)](https://www.kaggle.com/models/mahdertesfayeabebe/transformer-classifier-pre-trained-and-finetuned)
+- **Model Weights:** [Transformer Classifier (https://www.kaggle.com/datasets/mahdertesfayeabebe/transformer-classifier-model-weights)
 - **Data:** [Amharic Transformer Pre-train and Fine-tuning Data](https://www.kaggle.com/datasets/mahdertesfayeabebe/amharic-transformer-pre-train-and-fine-tuning-data)
 
 ## Dataset
