@@ -59,7 +59,10 @@ This project leverages a Masked Language Model (MLM) approach for pre-training, 
 │
 └── train.ipynb                # Jupyter notebook with code and documentation
 ```
-# Note here the two directories model_weights/ and data/  are not available here due to their size and githubs push restriction so I uploaded the model_weights/  here  and data/  here 
+Note: The two directories `model_weights/` and `data/` are not available here due to their size and GitHub's push restrictions. Instead, they have been uploaded to Kaggle at the following locations:
+
+- **Model Weights:** [Transformer Classifier (Pre-trained and Fine-tuned)](https://www.kaggle.com/models/mahdertesfayeabebe/transformer-classifier-pre-trained-and-finetuned)
+- **Data:** [Amharic Transformer Pre-train and Fine-tuning Data](https://www.kaggle.com/datasets/mahdertesfayeabebe/amharic-transformer-pre-train-and-fine-tuning-data)
 
 ## Dataset
 
