@@ -59,6 +59,7 @@ This project leverages a Masked Language Model (MLM) approach for pre-training, 
 │
 └── train.ipynb                # Jupyter notebook with code and documentation
 ```
+# Note here the two directories model_weights/ and data/  are not available here due to their size and githubs push restriction so I uploaded the model_weights/  here  and data/  here 
 
 ## Dataset
 
