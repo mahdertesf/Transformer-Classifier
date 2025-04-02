@@ -35,6 +35,8 @@ This project leverages a Masked Language Model (MLM) approach for pre-training, 
 
 ```
 .
+|--images   # images  for the train.ipynb notes
+|
 ├── data/
 │   ├── totaldata.json                  # Unlabeled Amharic text for pre-training
 │   ├── original_hate_speech_data/
