@@ -19,7 +19,6 @@ The goal is to build Transformer models from scratch, pre-train them using Maske
 
 ## Introduction
 
-
 This project explores the application of Transformer networks to the Amharic language, focusing on pre-training and hate speech recognition. Amharic, being a low-resource language, benefits significantly from pre-training techniques that allow models to learn contextualized word representations from large amounts of unlabeled data.
 
 This project leverages a Masked Language Model (MLM) approach for pre-training, followed by fine-tuning on a labeled dataset for hate speech detection. The trained model is then deployed on the **Mahder AI** web application.
@@ -159,6 +158,7 @@ This project presents a comprehensive approach to building an **Amharic hate spe
 
 ---
 **Contributions are welcome!** If you'd like to contribute, feel free to submit a pull request or open an issue.
+
 
 
 
